@@ -1,3 +1,66 @@
+## test 202605
+
+~~~
+from datetime import date
+
+import pandas as pd
+from opentdx.tdxClient import TdxClient
+from opentdx.const import MARKET, CATEGORY, EX_MARKET, PERIOD, SORT_TYPE
+
+if __name__ == "__main__":
+  with TdxClient() as client:
+ 
+    # 历史成交
+    print(pd.DataFrame(client.stock_transaction(MARKET.SZ, '301487', date(2026, 4, 28))))    
+~~~
+
+output
+
+~~~
+          time  price   vol   action  unknown
+0     09:25:00  23.00   163  NEUTRAL        0
+1     09:30:00  23.11   155      BUY        0
+2     09:30:00  23.11    62      BUY        0
+3     09:30:00  23.04    56     SELL        0
+4     09:30:00  23.02    64     SELL        0
+...        ...    ...   ...      ...      ...
+3406  14:56:00  22.81     6      BUY        0
+3407  14:56:00  22.78     4     SELL        0
+3408  14:56:00  22.80     3      BUY        0
+3409  14:57:00  22.78     1     SELL        0
+3410  15:00:00  22.78  1424  NEUTRAL        0
+
+[3411 rows x 5 columns]
+
+~~~
+
+~~~
+from datetime import date
+
+import pandas as pd
+from opentdx.tdxClient import TdxClient
+from opentdx.const import MARKET, CATEGORY, EX_MARKET, PERIOD, SORT_TYPE
+
+if __name__ == "__main__":
+  with TdxClient() as client:
+ 
+    # 获取个股F10
+    print(pd.DataFrame(client.stock_f10(MARKET.SZ, '301487'))) 
+~~~
+
+output
+
+~~~
+Empty DataFrame
+Columns: []
+Index: []
+
+~~~
+
+
+
+
+
 # opentdx — Python TDX 量化行情数据接口
 
 项目创意来自[`pytdx`](https://github.com/rainx/pytdx)
