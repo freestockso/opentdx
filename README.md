@@ -2,6 +2,8 @@
 
 ## test 202605
 
+PS D:\Thirdprogram\newtdxtqv772\PYPlugins\user> tdxdata_test opentdx.py
+
 ~~~
 from datetime import date
 
