@@ -203,6 +203,9 @@ print(pd.DataFrame(client.index_info([(MARKET.SZ, '399001'), (MARKET.SH, '999999
 
 [800 rows x 10 columns]
 
+
+获取K线数据
+print(pd.DataFrame(client.stock_kline(MARKET.SH, '999999', PERIOD.DAILY)))
 print(pd.DataFrame(client.stock_kline(MARKET.SH, '999999', PERIOD.MINS, times=10)))
 
                datetime     open    close     high      low          vol        amount  up_count  down_count  turnover
@@ -220,6 +223,7 @@ print(pd.DataFrame(client.stock_kline(MARKET.SH, '999999', PERIOD.MINS, times=10
 
 [800 rows x 10 columns]
 
+获取分时图
 print(pd.DataFrame(client.stock_tick_chart(MARKET.SH, '999999')))
 
        price        avg      vol
@@ -271,6 +275,8 @@ print(pd.DataFrame(client.stock_tick_chart(MARKET.SZ, '000001', date(2026, 3, 16
 
 [240 rows x 3 columns]
 
+
+获取股票详细报价
 print(pd.DataFrame(client.stock_quotes_detail(MARKET.SZ, '000001')))
 
       market    code  close   open   high    low  ...                                           handicap           unknown  rise_speed  active1  active2  turnover
@@ -278,6 +284,7 @@ print(pd.DataFrame(client.stock_quotes_detail(MARKET.SZ, '000001')))
 
 [1 rows x 22 columns]
 
+print("获取股票排行榜")
 print(pd.DataFrame(client.stock_top_board()))
 
                                              increase  ...                                           turnover
@@ -304,7 +311,8 @@ print(pd.DataFrame(client.stock_top_board()))
 
 [20 rows x 9 columns]
 
- print(pd.DataFrame(client.stock_quotes_list(CATEGORY.A, count = 0, sort_type=SORT_TYPE.TOTAL_AMOUNT)))
+print("获取各类股票行情列表")
+print(pd.DataFrame(client.stock_quotes_list(CATEGORY.A, count = 0, sort_type=SORT_TYPE.TOTAL_AMOUNT)))
 
          market    code    close     open     high      low  pre_close  ... short_turnover  min2_amount  opening_rush  vol_rise_speed    depth  active   turnover
 0     MARKET.SZ  300308  1049.87  1068.99  1099.87  1034.00    1078.00  ...          0.06%  294744064.0         0.00%           0.86%  -16.02%    4756   24925.61
@@ -321,6 +329,7 @@ print(pd.DataFrame(client.stock_top_board()))
 
 [5523 rows x 26 columns]
 
+print("获取股票报价")
 print(pd.DataFrame(client.stock_quotes(MARKET.SZ, '000001')))
 
       market    code  close   open   high    low  pre_close  ... short_turnover  min2_amount  opening_rush  vol_rise_speed   depth  active  turnover
