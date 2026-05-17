@@ -160,7 +160,8 @@ print(pd.DataFrame(client.index_momentum(MARKET.SH, '999999')))
 
 [240 rows x 1 columns]
 
-print(pd.DataFrame(client.stock_kline(MARKET.SH, '999999', PERIOD.DAILY)))
+print("获取指数概况")
+print(pd.DataFrame(client.index_info([(MARKET.SZ, '399001'), (MARKET.SH, '999999')])))
 
       market    code  active  pre_close    diff     close      open      high       low        vol        amount  up_count  down_count
 0  MARKET.SZ  399001    4748   15745.74 -184.37  15561.37  15753.19  15855.55  15447.40  849695631  1.825236e+12       971        1894
@@ -305,6 +306,7 @@ print(pd.DataFrame(client.stock_quotes(MARKET.SZ, '000001')))
 
 [1 rows x 26 columns]
 
+print("获取异动数据")
 print(pd.DataFrame(client.stock_unusual(MARKET.SZ)))
 
        index     market    code      time  desc            value  unusual_type
@@ -322,6 +324,7 @@ print(pd.DataFrame(client.stock_unusual(MARKET.SZ)))
 
 [11563 rows x 7 columns]
 
+print("获取竞价数据")
 print(pd.DataFrame(client.stock_auction(MARKET.SZ, '300308')))
 
         time       price  matched   unmatched
@@ -339,6 +342,7 @@ print(pd.DataFrame(client.stock_auction(MARKET.SZ, '300308')))
 
 [87 rows x 4 columns]
 
+print("获取历史委托数据")
 print(pd.DataFrame(client.stock_history_orders(MARKET.SZ, '000001', date(2026, 3, 16))))
 
      price  unknown    vol
@@ -356,7 +360,8 @@ print(pd.DataFrame(client.stock_history_orders(MARKET.SZ, '000001', date(2026, 3
 
 [240 rows x 3 columns]
 
- print(pd.DataFrame(client.stock_transaction(MARKET.SZ, '000001')))
+print("获取历史成交数据")
+print(pd.DataFrame(client.stock_transaction(MARKET.SZ, '000001')))
 
           time  price    vol  trans   action  unknown
 0     09:25:00  11.05   5018    384  NEUTRAL        0
@@ -390,6 +395,7 @@ print(pd.DataFrame(client.stock_transaction(MARKET.SZ, '000001', date(2026, 3, 1
 
 [4182 rows x 5 columns]
 
+print("获取股票分时缩略")
 print(pd.DataFrame(client.stock_chart_sampling(MARKET.SZ, '000001')))
 
         0
@@ -406,6 +412,7 @@ print(pd.DataFrame(client.stock_chart_sampling(MARKET.SZ, '000001')))
 60  10.99
 [61 rows x 1 columns]
 
+ print("获取F10数据")
 # print(pd.DataFrame(client.stock_f10(MARKET.SZ, '000001')))
 
     name                                            content
