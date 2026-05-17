@@ -282,6 +282,10 @@ print(pd.DataFrame(client.stock_quotes_detail(MARKET.SZ, '000001')))
       market    code  close   open   high    low  ...                                           handicap           unknown  rise_speed  active1  active2  turnover
 0  MARKET.SZ  000001  10.99  11.05  11.11  10.96  ...  {'bid': [{'price': 10.99, 'vol': 691}, {'price...  0001001100010110       0.09%     4512     4512   5022.99
 
+
+      market    code  close   open  high    low  pre_close   server_time  neg_price    vol  cur_vol       amount  s_vol  b_vol  s_amount  open_amount                                                                                                                                                                                                                                                                                                              handicap           unknown rise_speed  active1  active2  turnover
+0  MARKET.SZ  300298  16.83  16.81  17.2  16.74      16.84  15:33:07.908        0.0  59168      683  100566864.0  28467  30702         0       497600  {'bid': [{'price': 16.82, 'vol': 130}, {'price': 16.81, 'vol': 64}, {'price': 16.8, 'vol': 68}, {'price': 16.79, 'vol': 2}, {'price': 16.78, 'vol': 1176}], 'ask': [{'price': 16.83, 'vol': 35}, {'price': 16.84, 'vol': 24}, {'price': 16.85, 'vol': 71}, {'price': 16.86, 'vol': 10}, {'price': 16.87, 'vol': 1}]}  0001010110010110      0.00%     2760     2760  13121.82
+
 [1 rows x 22 columns]
 
 print("获取股票排行榜")
