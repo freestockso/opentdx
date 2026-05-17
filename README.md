@@ -1,5 +1,12 @@
 直接解析 通达信行情服务器协议
 
+remote:https://github.com/freestockso/opentdx
+
+
+local:D:\Thirdprogram\newtdxtqv772\PYPlugins\user>
+
+blog:https://www.stockso.com/blogpost-6a07569fa173f22e4e9d2b02-opentdx-httpsgithubcomfreestocksoopentdx
+
 ## test 202605
 
 PS D:\Thirdprogram\newtdxtqv772\PYPlugins\user> tdxdata_test opentdx.py
