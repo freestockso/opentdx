@@ -13,7 +13,7 @@ PS D:\Thirdprogram\newtdxtqv772\PYPlugins\user> tdxdata_test opentdx.py
 output
 
 ~~~
-       market    code    close     open     high      low  pre_close  ... short_turnover  min2_amount  opening_rush  vol_rise_speed    depth  active   turnover0
+market    code    close     open     high      low  pre_close  ... short_turnover  min2_amount  opening_rush  vol_rise_speed    depth  active   turnover0
 MARKET.SZ  300308  1049.87  1068.99  1099.87  1034.00    1078.00  ...          0.06%  294744064.0         0.00%           0.86%  -16.02%    4756   24925.611
 MARKET.SH  688008   247.98   265.00   272.00   242.63     265.08  ...          0.18%  178872320.0         0.00%           0.80%  -55.36%    4755   99900.522
 
