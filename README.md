@@ -475,9 +475,11 @@ PS D:\Thirdprogram\newtdxtqv772\PYPlugins\user>
 
 ~~~
 
-  '''
+~~~
+
+
     def stock_f10(self, market: MARKET, code: str) -> list[dict]:
-      
+  '''      
         获取F10数据
         Args:
             market: MARKET - 市场类型 (SZ: 深圳, SH: 上海, BJ: 北交所)
@@ -486,12 +488,12 @@ PS D:\Thirdprogram\newtdxtqv772\PYPlugins\user>
             List[Dict]:  股票公司信息
                 - name: str
                 - content: str | dict
-       
+  '''       
         return self.q_client().get_company_info(market, code)
- '''
+
 
  see:https://github.com/freestockso/opentdx/blob/main/opentdx/tdxClient.py
-
+~~~
 
 
 
