@@ -34,7 +34,7 @@ for example
 
 ## test 202605
 
-PS D:\Thirdprogram\newtdxtqv772\PYPlugins\user> tdxdata_test opentdx.py
+PS F:\stock\opentdx>  tdxdata_test opentdx.py
 
 
 ~~~
