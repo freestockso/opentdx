@@ -3,7 +3,7 @@
 remote:https://github.com/freestockso/opentdx
 
 
-local:D:\Thirdprogram\newtdxtqv772\PYPlugins\user>
+local: F:\stock\opentdx>
 
 blog:https://www.stockso.com/blogpost-6a07569fa173f22e4e9d2b02-opentdx-httpsgithubcomfreestocksoopentdx
 
