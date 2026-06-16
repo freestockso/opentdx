@@ -13,8 +13,13 @@ https://github.com/electkismet/eltdx  Python
 
 https://github.com/freestockso/eltdx  backup
 
+pytdx2
 
 https://github.com/QuantJia/pytdx2
+
+opentdx
+
+https://github.com/windskysolo/opentdx
 
 
 
