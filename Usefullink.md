@@ -14,4 +14,9 @@ https://github.com/electkismet/eltdx  Python
 https://github.com/freestockso/eltdx  backup
 
 
+https://github.com/QuantJia/pytdx2
+
+
+
+
 
