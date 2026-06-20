@@ -22,6 +22,13 @@ opentdx
 https://github.com/windskysolo/opentdx
 
 
+- easy_tdx
+  
+https://github.com/handsomejustin/easy_tdx Python
+
+https://github.com/freestockso/easy_tdx backup
+
+
 
 
 
