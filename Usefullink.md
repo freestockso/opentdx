@@ -17,7 +17,9 @@ pytdx2
 
 https://github.com/QuantJia/pytdx2
 
-opentdx
+- opentdx
+
+https://github.com/tbmilk/opentdx  backup
 
 https://github.com/windskysolo/opentdx
 
