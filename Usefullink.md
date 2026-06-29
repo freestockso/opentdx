@@ -19,6 +19,10 @@ https://github.com/QuantJia/pytdx2
 
 - opentdx  Python
 
+latest version
+
+https://libraries.io/pypi/opentdx
+
 https://github.com/tbmilk/opentdx  backup
 
 https://github.com/windskysolo/opentdx
